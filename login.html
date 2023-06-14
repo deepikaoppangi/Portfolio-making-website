@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" href="login.css">
+</head>
+<body>
+	<div class="login-page">
+		<!--creating the form-box-->
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" onclick="login()" class="toggle-btn">Log In</button>
+				<button type="button" onclick="register()" class="toggle-btn">Register</button>
+			</div>
+			<!--creating login form-->
+			<form id="login" class="input-group-login">
+				<input type="text" class="input-field"placeholder='Email Id'required>
+				<input type="password" class="input-field"placeholder='Enter Password'required>
+				<input type="checkbox" class="check-box"><span>Remember Password</span>
+				<button type="button" id="submit-login" class="submit-btn">Log in</button>
+			</form>
+			<!--creating registration form-->
+			<form id="register" class="input-group-register">
+				<input type="text" class="input-field"placeholder='First Name'required>
+				<input type="text" class="input-field"placeholder='Last Name'required>
+				<input type="email" class="input-field"placeholder='Email Id'required>
+				<input type="password" class="input-field"placeholder='Enter Password'required>
+				<input type="password" class="input-field"placeholder='Confirm Password'required>
+					<input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+				<button type="submit" class="submit-btn">Register</button>
+			</form>
+			<!--now let us style for the form page-->
+		</div>
+	</div>
+
+	<script>
+		var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		var loginBtn = document.getElementById('submit-login');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+		
+		// Add a click event listener to the login button
+		loginBtn.addEventListener('click', function(event) {
+			// prevent the form from submitting and reloading the page
+			event.preventDefault();
+			
+			// perform login action, such as submitting the login form or redirecting to another page
+			alert('You are now logged in!');
+			
+		});
+	</script>
+
+</body>
+</html>

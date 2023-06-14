@@ -1,0 +1,161 @@
+/* general styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    }
+    
+    a {
+    color: #007bff;
+    text-decoration: white;
+    }
+    
+    ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+    
+    h1, h2, h3 {
+    font-weight: bold;
+    margin-top: 0;
+    }
+    
+    /* header styles */
+    header {
+    background-color: #666666;
+    padding: 10px;
+    }
+    
+    nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    
+    nav li {
+    margin-right: 10px;
+    }
+    
+    nav li:last-child {
+    margin-right: 0;
+    }
+    
+    nav a {
+    padding: 10px;
+    color: #fff;
+    }
+    
+    nav a:hover {
+    background-color: #007bff;
+    color: #fff;
+    }
+    
+    /* section styles */
+    
+    section {
+    padding: 50px;
+    }
+    
+    #home , #portfolio, #contact{
+    background-color: #DFDCE5FF;
+    text-align: center;
+    }
+    
+    #about-me, #testimonials {
+    background-color: rgb(138, 162, 195);
+    }
+
+    #services, #blog {
+        background-color: rgb(242, 184, 196);
+    }
+    #about-me h2, #services h2, #portfolio h2, #testimonials h2, #blog h2, #contact h2 {
+    text-align: center;
+    color: #333;
+    }
+    
+    .work-samples-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    
+    .work-sample {
+    margin: 20px;
+    }
+    
+    .work-sample img {
+    width: 100%;
+    border-radius: 4px;
+    }
+    
+    .testimonials-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    
+    .testimonial {
+    margin: 20px;
+    flex-basis: 45%;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 4px;
+    }
+    
+    .testimonial p {
+    color: #333;
+    }
+    
+    .blog-posts-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    
+    .blog-post {
+    margin: 20px;
+    flex-basis: 30%;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 4px;
+    }
+    
+    .blog-post h3 {
+    margin-bottom: 10px;
+    color: #333;
+    }
+    
+    /* form styles */
+    
+    form {
+    margin-top: 20px;
+    }
+    
+    label {
+    display: block;
+    margin-bottom: 10px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    }
+    
+    input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+    background-color: #0069d9;
+    }

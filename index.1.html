@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>3rd web page </title>
+        <link rel="stylesheet" href="style-1.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+        <meta name="viewport" content="width=device-width", initial-scale="1">
+        
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+                
+                <!-- <div id="sideNav"> -->
+                    <nav> 
+                        <ul>
+                            <li><a href="#">HOME</a><li>
+                            
+                            <li><a href="services.html">SERVICES</a></li>
+                            <li><a href="aboutUs.html">ABOUT US</a></li>
+                            <li><a href="contact.html">CONTACT US</a></li>
+                            <!--<li><a href="#">Login page</a><li></li>-->
+                            <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+                            <!-- <li><a href="login.html">Login</a></li> -->
+
+                        </ul>
+                    </nav>
+                
+            </div>
+            <div class="header">
+                <h1>Showcase your work online with a portfolio website</h1>
+                <h2>From intuitive design features to built-in marketing tools, discover the complete solution for building a portfolio that stands out online.</h2>
+            </div>
+            
+            <div id='login-form'class='login-page'>
+                
+                <div class="form-box">
+                    <div class='button-box'>
+                        <div id='btn'></div>
+                        <button type="button" onclick="login()" class="toggle-btn">Log In</button>
+                        <button type="button" onclick="register()" class="toggle-btn">Register</button>
+                    </div>
+                    
+                    <form id="login" class="input-group-login">
+                        <input type="text" class="input-field"placeholder='Email Id'required>
+                        <input type="password" class="input-field"placeholder='Enter Password'required>
+                        <input type="checkbox" class="check-box"><span>Remember Password</span>
+                        <button type="submit" class="submit-btn">Log in</button>
+                    </form>
+                    
+                    <form id="register" class="input-group-register">
+                        <input type="text" class="input-field"placeholder='First Name'required>
+                        <input type="text" class="input-field"placeholder='Last Name'required>
+                        <input type="email" class="input-field"placeholder='Email Id'required>
+                        <input type="password" class="input-field"placeholder='Enter Password'required>
+                        <input type="password" class="input-field"placeholder='Confirm Password'required>
+                        <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                        <button type="submit" class="submit-btn">Register</button>
+                    </form>
+                
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            var x=document.getElementById('login');
+            var y=document.getElementById('register');
+            var z=document.getElementById('btn');
+            function register()
+            {
+                x.style.left='-400px';
+                y.style.left='50px';
+                z.style.left='110px';
+            }
+            function login()
+            {
+                x.style.left='50px';
+                y.style.left='450px';
+                z.style.left='0px';
+            }
+        </script>
+        
+        <script>
+            var modal = document.getElementById('login-form');
+            window.onclick = function(event)
+            {
+                if (event.target == modal)
+                {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
+        <!--let us run and see-->
+    
+    </body>
+</html>
